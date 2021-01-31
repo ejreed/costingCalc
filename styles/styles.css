@@ -1,0 +1,81 @@
+body {
+  background-color: #F0EDEE;
+  color: #131217;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+  background-color: #07393C;
+  border: #0A090C solid 2px;
+  color: #d3eaee;
+  margin: 10px 40px;
+  padding: 15px;
+}
+
+form {
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.fl {
+  padding: 5px 0;
+  overflow: hidden;
+}
+
+.fl h4 {
+  float: left;
+  margin: 0;
+}
+
+.fl p {
+  float: right;
+  margin: 2px;
+}
+
+.fl input {
+  float: right;
+  max-width: 100px;
+}
+
+#rate {
+  float: left;
+  width: 65%;
+}
+
+#setting {
+  float: right;
+  width: 25%;
+}
+
+.calc {
+  background-color: #2C666E;
+  border-color: #d3eaee;
+  border-radius: 0;
+  color: #B6DDe2;
+  float: left;
+  font-size: 24px;
+  height: 32px;
+  padding: 4px;
+  width: 80%;
+}
+
+.calc:focus {
+  outline: 0;
+}
+
+.submit {
+  background-color: #d3eaee;
+  border-color: #2C666E;
+  border-radius: 0;
+  color: #1d4449;
+  height: 32px;
+  float: right;
+  font-weight: bolder;
+  font-size: 22px;
+  min-width: 60px;
+  outline: 0;
+  padding: 4px;
+  text-align: center;
+  width: 10%;
+}

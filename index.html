@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Return Calculator</title>
+</head>
+<body>
+  <h1>Target Return</h1>
+
+
+  <form action="toggle">
+    <label for="toggle">Select Value</label>
+    <select name="toggle" type="select" onchange="trigger(this.value)">
+      <option value="lotReturn">Lot Return</option>
+      <option value="fobPrice">FOB Return</option>
+    </select> 
+  </form>
+  <div class="container" id="lotReturn">
+    <form action="submit">
+      <!-- <label for="lotReturn">Lot Return</label> -->
+      <input class="calc" id="lr" name="lotReturn" type="number">
+      <input class="submit" onclick="calculateFob()" value="Value">
+    </form>
+    <div class="fl">
+      <h4>Pallet Return</h4>
+      <p id="pr">$0.00</p>
+    </div>
+    <div class="fl">
+      <h4>Case Return</h4>
+      <p id="cr">$0.00</p>
+    </div>
+    <div class="fl">
+      <h4>Pound Return</h4>
+      <p id="wr">$0.00</p>
+    </div>
+    <hr>
+    <div class="fl">
+      <h4>Pound Price</h4>
+      <p>$0.00</p>
+    </div>
+    <div class="fl">
+      <h4>Case Price</h4>
+      <p>$0.00</p>
+    </div>
+    <div class="fl">
+      <h4>Pallet Price</h4>
+      <p>$0.00</p>
+    </div>
+    <div class="fl">
+      <h4>Lot Price</h4>
+      <p>$0.00</p>
+    </div>
+  </div>
+  <div class="container" id="fobPrice">
+    <form action="submit">
+      <label for="fobPrice">FOB Price</label>
+      <input name="fobPrice" type="number">
+      <input type="submit">
+    </form>
+    <div class="fl">
+      <h4>Pallet Return</h4>
+      <p>$100.00</p>
+    </div>
+    <div class="fl">
+      <h4>Case Return</h4>
+      <p>$100.00</p>
+    </div>
+    <div class="fl">
+      <h4>Pound Return</h4>
+      <p>$100.00</p>
+    </div>
+    <hr>
+    <div class="fl">
+      <h4>Pound Price</h4>
+      <p>$100.00</p>
+    </div>
+    <div class="fl">
+      <h4>Case Price</h4>
+      <p>$100.00</p>
+    </div>
+    <div class="fl">
+      <h4>Pallet Price</h4>
+      <p>$100.00</p>
+    </div>
+    <div class="fl">
+      <h4>Lot Price</h4>
+      <p>$100.00</p>
+    </div>
+  </div>
+
+</body>
+<script src="index.js"></script>
+</html>
